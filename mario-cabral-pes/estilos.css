@@ -1,0 +1,93 @@
+nav.navbar{
+    background: #b66dd8!important;
+}
+
+.ver-prop{
+    
+    border-color: #b66dd8!important;
+    color: #b66dd8!important;
+}
+
+.ver-prop:hover{
+    background: #b66dd8 !important;
+    color: white !important;
+}
+nav.navbar a{
+    color: white !important;
+}
+
+scroll-container{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.h-100{
+    background: #b66dd8 !important;
+}
+
+.card{
+    background: #b66dd8 !important;
+
+}
+
+
+.colaboradores .card-header,
+.card-title,
+.card-text{
+
+    color: white;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.caja .border{
+    background: #b66dd8;
+}
+
+.tit-prop{
+    color: #b66dd8;
+}
+
+.cont-prop{
+    font-size: 25px;
+}
+
+.s-m{
+    text-align: center;
+    margin-top: 20px ;
+}
+
+.s-m a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    padding: 0 14px;
+    transition: .4s;
+}
+
+.s-m a:hover{
+    color: #a533ff;
+}
+
+.col-sm{
+    align-items: center !important;
+}
+.footer{
+    padding: 0;
+    margin-top: 50px;
+    padding-top: 30px;
+    top:500px;
+    background: #b66dd8;
+    text-align: center;
+    height: 120px;
+   position: static;
+
+}
+
+.footer .sigue{
+    font-size: 20px;
+    color: #f1f1f1;
+}
