@@ -75,6 +75,10 @@ button a{
 .col-sm{
     align-items: center !important;
 }
+
+.cont-prop{
+    text-align:center;
+}
 .footer{
     padding: 0;
     margin-top: 50px;
