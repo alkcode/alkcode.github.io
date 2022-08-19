@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>CECIM | Menú</title>
+        <title>CECIMATTS | Menú</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -17,7 +17,7 @@
         <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet"> -->
         <!-- Glider.css-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"> -->
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -35,14 +35,14 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Sobre nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="services.html">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Ofertas</a></li>
-                        <!--<li class="nav-item"><a class="nav-link" href="">Contacto</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead" id="index">
             <div class="container">
                 <div class="masthead-subheading">Centro de Capacitación Integral Matt´s</div>
                 <div class="masthead-heading text-uppercase">¡Conocenos Ahora!</div>
@@ -67,8 +67,8 @@
                     </div>
                     <div class="ol-sm-12 col-md-6 col-lg-4">
                         <div class="team-member">
-                            <a href="about.html"><img class="mx-auto rounded-circle" src="assets/img/icons/oferta.jpg" alt="..." /></a>
-                            <h4>Ofertas</h4>
+                            <a href="historia.html"><img class="mx-auto rounded-circle" src="assets/img/icons/oferta.jpg" alt="..." /></a>
+                            <h4>Nuestra Historia</h4>
                             </div>
                     </div>
                 </div>
@@ -76,180 +76,63 @@
             </div>
         </section>
         <!-- Carousel-->
-        <!-- El carrusel es el causante del desborde. Cambiar por otra opcion -->
         <div class="container">
-            <div class="carousel">
-                <div class="carousel__contenedor">
-                    <button aria-label="Anterior" class="carousel__anterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <div class="carousel__lista">
-                        <div class="carousel__elemento">
-                            <img src="assets/img/about/1.jpg" alt="">
-                            <p>Texto ejemplo</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="assets/img/about/2.jpg" alt="">
-                            <p>Texto ejemplo</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="assets/img/about/3.jpg" alt="">
-                            <p>Texto ejemplo</p>
-                        </div>
-                        <div class="carousel__elemento">
-                            <img src="assets/img/about/4.jpg" alt="">
-                            <p>Texto ejemplo</p>
-                        </div>
-                    </div>
-                    <button aria-label="Siguiente" class="carousel__siguiente">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div role="tablist" class="carousel__indicadores"></div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/carrusel/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carrusel/2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carrusel/3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </div>
-
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
-            </div>
-        </section>
         <!-- Clients-->
         <div class="py-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/IMT.png" alt="..." aria-label="INSTITUTO MEXICANO DE TANATOLOGÍA" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ENT.png" alt="..." aria-label="ESCUELA NORMAL DE TEXCOCO" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/SFC.png" alt="..." aria-label="SUBDIRECCIÓN DE FORMACIÓN CONTINUA" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/CTB.png" alt="..." aria-label="IBM Logo" /></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact--
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!--
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input--
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input--
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input--
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input--
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted--
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form--
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button--
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-                </form>
-            </div>
-        </section>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Powered by <a href="https://alkcode.github.io/DEMA/" target="_blanks">DEMA</a></div>
+                    <div class="col-lg-4 text-lg-start">Powered by <a href="https://alkcode.github.io/DEMA/" target="_blank">DEMA</a></div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/cecimatts/" aria-label="Twitter" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/maykyeskmilla/?ref=page_internal" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
+                        
                 </div>
             </div>
         </footer>
@@ -259,7 +142,7 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <!-- Glider.js-->
-        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>        
+        <!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>         -->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
